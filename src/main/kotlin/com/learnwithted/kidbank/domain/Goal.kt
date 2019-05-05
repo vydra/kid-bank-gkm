@@ -1,9 +1,8 @@
 package com.learnwithted.kidbank.domain
 
 
-class Goal {
-    private val description: String
-    private val targetAmount: Int
+data class Goal(val description: String, val targetAmount: Int) {
+
 
     // EXTRINSIC property used by Repository
 
@@ -11,11 +10,6 @@ class Goal {
         set(id) {
             field = this.id
         }
-
-    constructor(description: String, targetAmount: Int) {
-        this.description = description
-        this.targetAmount = targetAmount
-    }
 
     fun description(): String {
         return description
