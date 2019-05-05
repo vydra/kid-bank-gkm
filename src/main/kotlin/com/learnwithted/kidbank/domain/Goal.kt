@@ -6,10 +6,10 @@ data class Goal(val description: String, val targetAmount: Int) {
 
     // EXTRINSIC property used by Repository
 
-    var id: Long? = null
-        set(id) {
-            field = this.id
-        }
+//    var id: Long? = null
+//        set(id) {
+//            field = this.id
+//        }
 
     fun description(): String {
         return description
